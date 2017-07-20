@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  align-content: center;
+  width:100%;
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding-left: 50px;
+}
+
+.product {
+  background-color: #FFF;
+  padding: 0px;
+  margin: 10px;
+  overflow: hidden;
+  border: lightgrey 2px solid;
+  width: 320px;
+  display: inline-block;
+  align-content: center;
+  height: 330px;
+  
+}
+
+.product h2 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.product h2 .description {
+  font-size: 14px;
+  font-style: Helvetica-Bold;
+  font-weight: bold;
+  color: black;
+  overflow: hidden;
+  line-height: 1;
+  float: left;
+}
+
+.image-column {
+  width: 180px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  padding-right: 10px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+	padding-left: 60px;
+}
+
+.description-column {
+  width: 280px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  float: left;
+  height: 50px;
+  overflow: hidden;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.price-column {
+  width: 90%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  overflow: hidden;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333 100%;
+  opacity: 100%;
+  font-style: Helvetica-Bold;
+}
+
+a{
+	text-decoration: inherit;
+ }
+
+.myButton {
+  background-color: #FFFFFF;
+  color: #0471AF;
+  font-style: Helvetica;
+  border:solid 2px #CCCCCC;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  border-radius: 1px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+  margin-left: 20px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  align-content: center;
+}
+
+@media (max-width: 400px) {
+  .image-column,
+  .description-column {
+    width: auto;
+    float: none;
+    padding: 0;
+  }

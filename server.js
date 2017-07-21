@@ -1,11 +1,12 @@
 const express = require('express');
 const hbs = require('hbs');
-const ourapp = require('./app');
+const ourapp = require('./assets/js/app');
 var path = require('path')
 
 var app = express();
 
-app.use(express.static(path.join(__dirname,'public')));
+//app.use('/css',express.static(path.join(__dirname,'public/css')));
+app.use('/css',express.static(path.join(__dirname,'public/css')));
 app.set('view engine', 'hbs');
 
 
@@ -15,6 +16,10 @@ app.get('/', (req, res) => {
         prodList = JSON.parse('{"productList":' + prodListStr + '}');
         res.render('myTemplate.hbs', prodList);
     });
+});
+
+app.get('/css/reset.css', function(req, res){
+  res.sendFile(__dirname + '/reset.css');
 });
 
 app.listen(3000, () => {
